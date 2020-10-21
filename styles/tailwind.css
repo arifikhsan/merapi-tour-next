@@ -7,9 +7,9 @@
 /* Stop purging. */
 
 /* Write your own custom component styles here */
-.btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
+/* .btn-blue {
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+} */
 
 /* Start purging... */
 @tailwind utilities;
