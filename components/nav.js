@@ -6,7 +6,7 @@ export default class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: true,
+      menu: false,
     };
   }
 
@@ -24,7 +24,7 @@ export default class Nav extends Component {
         {/* header */}
         <div className="z-20 w-full">
           <div className="flex justify-between font-display">
-            <div className="flex items-center justify-center p-4">
+            <div className="flex items-center justify-center p-4 cursor-pointer">
               <Link href="/">
                 <p className="font-bold text-white">Merapi Tour</p>
               </Link>
@@ -97,12 +97,14 @@ export default class Nav extends Component {
                   >
                     Gallery
                   </div>
-                  <div
-                    style={{ height: `50vh` }}
-                    className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                  >
-                    Contact Us
-                  </div>
+                  <Link href="/contact">
+                    <div
+                      style={{ height: `50vh` }}
+                      className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
+                    >
+                      Contact Us
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
