@@ -53,7 +53,7 @@ export default class Nav extends Component {
 
         {/* overlay menu */}
         {menu && (
-          <div className="absolute inset-0 z-30 bg-white">
+          <div className="fixed inset-0 z-30 bg-white">
             <div className="flex flex-col h-full">
               <div className="relative flex items-center justify-between">
                 <div></div>
@@ -77,26 +77,30 @@ export default class Nav extends Component {
                   </svg>
                 </div>
               </div>
-              <div className="text-xl font-bold text-gray-600 font-display">
+              <div className="text-lg font-bold text-gray-600 font-display">
                 <div className="grid grid-cols-2">
-                  <div
-                    style={{ height: `50vh` }}
-                    className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                  >
-                    What To Do
-                  </div>
+                  <Link href="/">
+                    <div
+                      style={{ height: `50vh` }}
+                      className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
+                    >
+                      Home
+                    </div>
+                  </Link>
                   <div
                     style={{ height: `50vh` }}
                     className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
                   >
                     Accomodation
                   </div>
-                  <div
-                    style={{ height: `50vh` }}
-                    className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                  >
-                    Gallery
-                  </div>
+                  <Link href="/gallery">
+                    <div
+                      style={{ height: `50vh` }}
+                      className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
+                    >
+                      Gallery
+                    </div>
+                  </Link>
                   <Link href="/contact">
                     <div
                       style={{ height: `50vh` }}
