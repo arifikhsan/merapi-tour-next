@@ -5,7 +5,7 @@ export default class IndexPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: true,
+      menu: false,
     };
   }
 
@@ -217,118 +217,6 @@ export default class IndexPage extends Component {
         {/* visit & accomodation */}
         {/* footer */}
         <footer className="text-gray-700 font-body">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-wrap -mx-4 -mb-10">
-              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 font-display">
-                  CATEGORIES
-                </h2>
-                <nav className="mb-10 list-none">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      First Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Second Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Third Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Fourth Link
-                    </a>
-                  </li>
-                </nav>
-              </div>
-              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 font-display">
-                  CATEGORIES
-                </h2>
-                <nav className="mb-10 list-none">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      First Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Second Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Third Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Fourth Link
-                    </a>
-                  </li>
-                </nav>
-              </div>
-              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 font-display">
-                  CATEGORIES
-                </h2>
-                <nav className="mb-10 list-none">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      First Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Second Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Third Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Fourth Link
-                    </a>
-                  </li>
-                </nav>
-              </div>
-              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 font-display">
-                  CATEGORIES
-                </h2>
-                <nav className="mb-10 list-none">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      First Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Second Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Third Link
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Fourth Link
-                    </a>
-                  </li>
-                </nav>
-              </div>
-            </div>
-          </div>
           <div className="border-t border-gray-200">
             <div className="container flex flex-wrap items-center px-5 py-8 mx-auto">
               <div className="flex flex-wrap justify-center md:flex-no-wrap md:justify-start">
