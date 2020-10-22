@@ -28,88 +28,46 @@ export default class IndexPage extends Component {
         </div>
 
         {/* what to do */}
-        <div className="flex items-center justify-center min-h-screen">
-          <div className="py-12 bg-white">
+        <div className="flex items-center justify-center">
+          <div className="py-24 bg-white">
             <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-              <div className="text-center">
+              <div className="text-center font-display">
                 <p className="text-base font-semibold leading-6 tracking-wide text-gray-600 uppercase">
                   What to do at
                 </p>
-                <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 uppercase sm:text-4xl sm:leading-10">
+                <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-widest text-gray-900 uppercase sm:text-4xl sm:leading-10">
                   Merapi
                 </h3>
-                <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
+                <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 font-body lg:mx-auto">
                   Lorem ipsum dolor sit amet consect adipisicing elit.
                 </p>
               </div>
 
-              <div className="mt-10">
-                <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                  <li>
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 text-white bg-gray-500 rounded-md"></div>
-                      </div>
-                      <div className="ml-4">
-                        <h4 className="text-lg font-medium leading-6 text-gray-900">
-                          Climbing
-                        </h4>
-                        <p className="mt-2 text-base leading-6 text-gray-500">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="mt-10 md:mt-0">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 text-white bg-gray-500 rounded-md"></div>
-                      </div>
-                      <div className="ml-4">
-                        <h4 className="text-lg font-medium leading-6 text-gray-900">
-                          Hiking
-                        </h4>
-                        <p className="mt-2 text-base leading-6 text-gray-500">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="mt-10 md:mt-0">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 text-white bg-gray-500 rounded-md"></div>
-                      </div>
-                      <div className="ml-4">
-                        <h4 className="text-lg font-medium leading-6 text-gray-900">
-                          Travel
-                        </h4>
-                        <p className="mt-2 text-base leading-6 text-gray-500">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="mt-10 md:mt-0">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 text-white bg-gray-500 rounded-md"></div>
-                      </div>
-                      <div className="ml-4">
-                        <h4 className="text-lg font-medium leading-6 text-gray-900">
-                          Photography
-                        </h4>
-                        <p className="mt-2 text-base leading-6 text-gray-500">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <div className="grid gap-4 mt-10">
+                <div className="relative transition duration-500 hover:shadow-lg">
+                  <img src="image/1.jpg" className="h-64 rounded" />
+                  <h4 className="absolute bottom-0 p-4 text-lg font-semibold tracking-widest text-white uppercase">
+                    Hiking
+                  </h4>
+                </div>
+                <div className="relative transition duration-500 hover:shadow-lg">
+                  <img src="image/2.jpg" className="h-64 rounded" />
+                  <h4 className="absolute bottom-0 p-4 text-lg font-semibold tracking-widest text-white uppercase">
+                    Climbing
+                  </h4>
+                </div>
+                <div className="relative transition duration-500 hover:shadow-lg">
+                  <img src="image/3.jpg" className="h-64 rounded" />
+                  <h4 className="absolute bottom-0 p-4 text-lg font-semibold tracking-widest text-white uppercase">
+                    Explore
+                  </h4>
+                </div>
+                <div className="relative transition duration-500 hover:shadow-lg">
+                  <img src="image/4.jpg" className="h-64 rounded" />
+                  <h4 className="absolute bottom-0 p-4 text-lg font-semibold tracking-widest text-white uppercase">
+                    Photography
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
@@ -117,23 +75,15 @@ export default class IndexPage extends Component {
         {/* price */}
         <section className="overflow-hidden text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col w-full mb-20 text-center">
-              <h1 className="mb-2 text-3xl font-medium text-gray-900 sm:text-4xl title-font">
+            <div className="text-center font-display">
+              <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-widest text-gray-900 uppercase sm:text-4xl sm:leading-10">
                 Pricing
-              </h1>
-              <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
+              </h3>
+              <p className="max-w-2xl mt-4 text-gray-500 font-body lg:mx-auto">
+                Lorem ipsum dolor sit amet consect adipisicing elit.
               </p>
-              <div className="flex mx-auto mt-6 overflow-hidden border-2 border-indigo-500 rounded">
-                <button className="px-4 py-1 text-white bg-indigo-500 focus:outline-none">
-                  Monthly
-                </button>
-                <button className="px-4 py-1 focus:outline-none">
-                  Annually
-                </button>
-              </div>
             </div>
-            <div className="flex flex-wrap -m-4">
+            <div className="flex flex-wrap">
               <div className="w-full p-4 xl:w-1/4 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
                   <h2 className="mb-1 text-sm font-medium tracking-widest title-font">
@@ -532,7 +482,7 @@ export default class IndexPage extends Component {
         {/* testi */}
         <section className="text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-wrap -m-4">
+            <div className="flex flex-wrap">
               <div className="p-4 mb-6 lg:w-1/3 lg:mb-0">
                 <div className="h-full text-center">
                   <img
@@ -610,7 +560,7 @@ export default class IndexPage extends Component {
                 prism food truck ugh squid celiac humblebrag.
               </p>
             </div>
-            <div className="flex flex-wrap -m-4 text-center">
+            <div className="flex flex-wrap text-center">
               <div className="w-full p-4 md:w-1/4 sm:w-1/2">
                 <div className="px-4 py-6 border-2 border-gray-200 rounded-lg">
                   <svg
