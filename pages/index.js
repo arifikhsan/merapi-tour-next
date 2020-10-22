@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 export default class IndexPage extends Component {
   render() {
@@ -39,10 +40,9 @@ export default class IndexPage extends Component {
                   Merapi
                 </h3>
                 <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 font-body lg:mx-auto">
-                  Lorem ipsum dolor sit amet consect adipisicing elit.
+                  Make a memories with unforgettable experience
                 </p>
               </div>
-
               <div className="grid gap-4 mt-10">
                 <div className="relative transition duration-500 hover:shadow-lg">
                   <img src="image/1.jpg" className="h-64 rounded" />
@@ -80,17 +80,20 @@ export default class IndexPage extends Component {
                 Pricing
               </h3>
               <p className="max-w-2xl mt-4 text-gray-500 font-body lg:mx-auto">
-                Lorem ipsum dolor sit amet consect adipisicing elit.
+                Best price for best experience
               </p>
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap mt-8">
               <div className="w-full p-4 xl:w-1/4 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest title-font">
-                    START
+                  <h2 className="mb-1 text-sm font-medium tracking-widest uppercase title-font">
+                    Economy
                   </h2>
-                  <h1 className="pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-                    Free
+                  <h1 className="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
+                    <span>$200</span>
+                    <span className="ml-1 text-lg font-normal text-gray-500">
+                      /person
+                    </span>
                   </h1>
                   <p className="flex items-center mb-2 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -106,7 +109,7 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Vexillologist pitchfork
+                    2 Days 1 night
                   </p>
                   <p className="flex items-center mb-2 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -122,7 +125,39 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Tumeric plaid portland
+                    3 Stars hotel
+                  </p>
+                  <p className="flex items-center mb-2 text-gray-600">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.5"
+                        className="w-3 h-3"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    3 Destination
+                  </p>
+                  <p className="flex items-center mb-2 text-gray-600">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.5"
+                        className="w-3 h-3"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    3 Times a day food
                   </p>
                   <p className="flex items-center mb-6 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -138,10 +173,10 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Mixtape chillwave tumeric
+                    Minibus shuttle
                   </p>
                   <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
-                    Button
+                    Book now
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -155,26 +190,26 @@ export default class IndexPage extends Component {
                     </svg>
                   </button>
                   <p className="mt-3 text-xs text-gray-500">
-                    Literally you probably haven't heard of them jean shorts.
+                    Best for new customer
                   </p>
                 </div>
               </div>
               <div className="w-full p-4 xl:w-1/4 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-indigo-500 rounded-lg">
-                  <span className="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-indigo-500 rounded-bl">
-                    POPULAR
+                  <span className="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white uppercase bg-indigo-500 rounded-bl">
+                    Popular
                   </span>
-                  <h2 className="mb-1 text-sm font-medium tracking-widest title-font">
-                    PRO
+                  <h2 className="mb-1 text-sm font-medium tracking-widest uppercase title-font">
+                    Family
                   </h2>
                   <h1 className="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-                    <span>$38</span>
+                    <span>$300</span>
                     <span className="ml-1 text-lg font-normal text-gray-500">
-                      /mo
+                      /person
                     </span>
                   </h1>
                   <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-indigo-500 rounded-full">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -187,10 +222,10 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Vexillologist pitchfork
+                    4 Days 3 night
                   </p>
                   <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-indigo-500 rounded-full">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -203,10 +238,10 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Tumeric plaid portland
+                    4 Stars hotel
                   </p>
                   <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-indigo-500 rounded-full">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -219,10 +254,26 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Hexagon neutra unicorn
+                    5 Destination
+                  </p>
+                  <p className="flex items-center mb-2 text-gray-600">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-indigo-500 rounded-full">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.5"
+                        className="w-3 h-3"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    3 Times a day food
                   </p>
                   <p className="flex items-center mb-6 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-indigo-500 rounded-full">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -235,10 +286,10 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Mixtape chillwave tumeric
+                    Bus shuttle
                   </p>
                   <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
-                    Button
+                    Book now
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -252,19 +303,19 @@ export default class IndexPage extends Component {
                     </svg>
                   </button>
                   <p className="mt-3 text-xs text-gray-500">
-                    Literally you probably haven't heard of them jean shorts.
+                    Perfect holiday for your family
                   </p>
                 </div>
               </div>
               <div className="w-full p-4 xl:w-1/4 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest title-font">
-                    BUSINESS
+                  <h2 className="mb-1 text-sm font-medium tracking-widest uppercase title-font">
+                    Business
                   </h2>
                   <h1 className="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-                    <span>$56</span>
+                    <span>$400</span>
                     <span className="ml-1 text-lg font-normal text-gray-500">
-                      /mo
+                      /person
                     </span>
                   </h1>
                   <p className="flex items-center mb-2 text-gray-600">
@@ -281,7 +332,7 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Vexillologist pitchfork
+                    5 Days 4 night
                   </p>
                   <p className="flex items-center mb-2 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -297,7 +348,7 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Tumeric plaid portland
+                    5 Stars hotel
                   </p>
                   <p className="flex items-center mb-2 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -313,7 +364,7 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Hexagon neutra unicorn
+                    6 Destination
                   </p>
                   <p className="flex items-center mb-2 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -329,7 +380,7 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Vexillologist pitchfork
+                    3 Times a day food
                   </p>
                   <p className="flex items-center mb-6 text-gray-600">
                     <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
@@ -345,10 +396,10 @@ export default class IndexPage extends Component {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Mixtape chillwave tumeric
+                    Private bus shuttle
                   </p>
                   <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
-                    Button
+                    Book now
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -362,117 +413,7 @@ export default class IndexPage extends Component {
                     </svg>
                   </button>
                   <p className="mt-3 text-xs text-gray-500">
-                    Literally you probably haven't heard of them jean shorts.
-                  </p>
-                </div>
-              </div>
-              <div className="w-full p-4 xl:w-1/4 md:w-1/2">
-                <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest title-font">
-                    SPECIAL
-                  </h2>
-                  <h1 className="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-                    <span>$72</span>
-                    <span className="ml-1 text-lg font-normal text-gray-500">
-                      /mo
-                    </span>
-                  </h1>
-                  <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2.5"
-                        className="w-3 h-3"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                    </span>
-                    Vexillologist pitchfork
-                  </p>
-                  <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2.5"
-                        className="w-3 h-3"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                    </span>
-                    Tumeric plaid portland
-                  </p>
-                  <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2.5"
-                        className="w-3 h-3"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                    </span>
-                    Hexagon neutra unicorn
-                  </p>
-                  <p className="flex items-center mb-2 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2.5"
-                        className="w-3 h-3"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                    </span>
-                    Vexillologist pitchfork
-                  </p>
-                  <p className="flex items-center mb-6 text-gray-600">
-                    <span className="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2.5"
-                        className="w-3 h-3"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                    </span>
-                    Mixtape chillwave tumeric
-                  </p>
-                  <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
-                    Button
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-auto"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </button>
-                  <p className="mt-3 text-xs text-gray-500">
-                    Literally you probably haven't heard of them jean shorts.
+                    Golden experience for special person
                   </p>
                 </div>
               </div>
@@ -482,19 +423,24 @@ export default class IndexPage extends Component {
         {/* testi */}
         <section className="text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-wrap">
+            <div className="text-center font-display">
+              <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-widest text-gray-900 uppercase sm:text-4xl sm:leading-10">
+                Testimonials
+              </h3>
+              <p className="max-w-2xl mt-4 text-gray-500 font-body lg:mx-auto">
+                Don't just trust our word
+              </p>
+            </div>
+            <div className="flex flex-wrap mt-8">
               <div className="p-4 mb-6 lg:w-1/3 lg:mb-0">
                 <div className="h-full text-center">
                   <img
                     alt="testimonial"
                     className="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
-                    src="https://dummyimage.com/302x302"
+                    src="https://s3.amazonaws.com/uifaces/faces/twitter/theonlyzeke/128.jpg"
                   />
                   <p className="leading-relaxed">
-                    Edison bulb retro cloud bread echo park, helvetica stumptown
-                    taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin
-                    coffee ennui shaman taiyaki vape DIY tote bag drinking
-                    vinegar cronut adaptogen squid fanny pack vaporware.
+                    Great staff, great destination, such a perfect moment!
                   </p>
                   <span className="inline-block w-10 h-1 mt-6 mb-4 bg-indigo-500 rounded"></span>
                   <h2 className="text-sm font-medium tracking-wider text-gray-900 title-font">
@@ -508,13 +454,11 @@ export default class IndexPage extends Component {
                   <img
                     alt="testimonial"
                     className="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
-                    src="https://dummyimage.com/300x300"
+                    src="https://s3.amazonaws.com/uifaces/faces/twitter/hanna_smi/128.jpg"
                   />
                   <p className="leading-relaxed">
-                    Edison bulb retro cloud bread echo park, helvetica stumptown
-                    taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin
-                    coffee ennui shaman taiyaki vape DIY tote bag drinking
-                    vinegar cronut adaptogen squid fanny pack vaporware.
+                    This was a wonderful unforgettable experience with Merapi
+                    Tour!
                   </p>
                   <span className="inline-block w-10 h-1 mt-6 mb-4 bg-indigo-500 rounded"></span>
                   <h2 className="text-sm font-medium tracking-wider text-gray-900 title-font">
@@ -528,13 +472,10 @@ export default class IndexPage extends Component {
                   <img
                     alt="testimonial"
                     className="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
-                    src="https://dummyimage.com/305x305"
+                    src="https://s3.amazonaws.com/uifaces/faces/twitter/serefka/128.jpg"
                   />
                   <p className="leading-relaxed">
-                    Edison bulb retro cloud bread echo park, helvetica stumptown
-                    taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin
-                    coffee ennui shaman taiyaki vape DIY tote bag drinking
-                    vinegar cronut adaptogen squid fanny pack vaporware.
+                    Very well trained staff in a good tour company.
                   </p>
                   <span className="inline-block w-10 h-1 mt-6 mb-4 bg-indigo-500 rounded"></span>
                   <h2 className="text-sm font-medium tracking-wider text-gray-900 title-font">
@@ -549,18 +490,15 @@ export default class IndexPage extends Component {
         {/* statistic */}
         <section className="text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col w-full mb-20 text-center">
-              <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font">
-                Master Cleanse Reliac Heirloom
-              </h1>
-              <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify, subway tile poke farm-to-table. Franzen you probably
-                haven't heard of them man bun deep jianbing selfies heirloom
-                prism food truck ugh squid celiac humblebrag.
+            <div className="text-center font-display">
+              <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-widest text-gray-900 uppercase sm:text-4xl sm:leading-10">
+                Statistics
+              </h3>
+              <p className="max-w-2xl mt-4 text-gray-500 font-body lg:mx-auto">
+                Real world prove of our services
               </p>
             </div>
-            <div className="flex flex-wrap text-center">
+            <div className="flex flex-wrap mt-8 text-center">
               <div className="w-full p-4 md:w-1/4 sm:w-1/2">
                 <div className="px-4 py-6 border-2 border-gray-200 rounded-lg">
                   <svg
@@ -576,9 +514,9 @@ export default class IndexPage extends Component {
                     <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
                   </svg>
                   <h2 className="text-3xl font-medium text-gray-900 title-font">
-                    2.7K
+                    2.1K
                   </h2>
-                  <p className="leading-relaxed">Downloads</p>
+                  <p className="leading-relaxed">Unique daily visitor</p>
                 </div>
               </div>
               <div className="w-full p-4 md:w-1/4 sm:w-1/2">
@@ -599,27 +537,7 @@ export default class IndexPage extends Component {
                   <h2 className="text-3xl font-medium text-gray-900 title-font">
                     1.3K
                   </h2>
-                  <p className="leading-relaxed">Users</p>
-                </div>
-              </div>
-              <div className="w-full p-4 md:w-1/4 sm:w-1/2">
-                <div className="px-4 py-6 border-2 border-gray-200 rounded-lg">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="inline-block w-12 h-12 mb-3 text-indigo-500"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                    <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-                  </svg>
-                  <h2 className="text-3xl font-medium text-gray-900 title-font">
-                    74
-                  </h2>
-                  <p className="leading-relaxed">Files</p>
+                  <p className="leading-relaxed">Happy customer</p>
                 </div>
               </div>
               <div className="w-full p-4 md:w-1/4 sm:w-1/2">
@@ -638,12 +556,39 @@ export default class IndexPage extends Component {
                   <h2 className="text-3xl font-medium text-gray-900 title-font">
                     46
                   </h2>
-                  <p className="leading-relaxed">Places</p>
+                  <p className="leading-relaxed">Tourist destination</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        {/* support */}
+        <div className="flex items-center justify-center">
+          <div className="py-24 bg-white">
+            <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+              <div className="text-center font-display">
+                <p className="text-base font-semibold leading-6 tracking-wide text-gray-600 uppercase">
+                  Awward winning support
+                </p>
+                <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-widest text-gray-900 uppercase sm:text-4xl sm:leading-10">
+                  We're here to help
+                </h3>
+                <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 font-body lg:mx-auto">
+                  We will answer your question right away
+                </p>
+              </div>
+              <div className="flex justify-center mt-8">
+                <div className="inline-flex rounded-md shadow">
+                  <Link href="/contact">
+                    <button className="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline">
+                      Visit contact page
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* footer */}
         <Footer />
       </div>
