@@ -175,20 +175,22 @@ export default class IndexPage extends Component {
                     </span>
                     Minibus shuttle
                   </p>
-                  <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
-                    Book now
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-auto"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </button>
+                  <Link href="/contact">
+                    <button className="flex items-center w-full px-4 py-2 mt-auto text-white transition duration-500 bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
+                      Book now
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-auto"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </Link>
                   <p className="mt-3 text-xs text-gray-500">
                     Best for new customer
                   </p>
@@ -288,20 +290,22 @@ export default class IndexPage extends Component {
                     </span>
                     Bus shuttle
                   </p>
-                  <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
-                    Book now
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-auto"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </button>
+                  <Link href="/contact">
+                    <button className="flex items-center w-full px-4 py-2 mt-auto text-white transition duration-500 bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
+                      Book now
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-auto"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </Link>
                   <p className="mt-3 text-xs text-gray-500">
                     Perfect holiday for your family
                   </p>
@@ -398,20 +402,22 @@ export default class IndexPage extends Component {
                     </span>
                     Private bus shuttle
                   </p>
-                  <button className="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
-                    Book now
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-auto"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </button>
+                  <Link href="/contact">
+                    <button className="flex items-center w-full px-4 py-2 mt-auto text-white transition duration-500 bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
+                      Book now
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-auto"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </Link>
                   <p className="mt-3 text-xs text-gray-500">
                     Golden experience for special person
                   </p>
