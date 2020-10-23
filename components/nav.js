@@ -77,35 +77,20 @@ export default class Nav extends Component {
                   </svg>
                 </div>
               </div>
-              <div className="text-lg font-bold text-gray-600 font-display">
-                <div className="grid grid-cols-2">
+              <div className="flex items-center justify-center h-full text-lg font-bold text-gray-600 font-display">
+                <div className="flex flex-col items-center justify-between w-full">
                   <Link href="/">
-                    <div
-                      style={{ height: `50vh` }}
-                      className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                    >
+                    <div className="flex items-center justify-center w-full py-8 transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500">
                       Home
                     </div>
                   </Link>
-                  <div
-                    style={{ height: `50vh` }}
-                    className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                  >
-                    Accomodation
-                  </div>
                   <Link href="/gallery">
-                    <div
-                      style={{ height: `50vh` }}
-                      className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                    >
+                    <div className="flex items-center justify-center w-full py-8 transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500">
                       Gallery
                     </div>
                   </Link>
                   <Link href="/contact">
-                    <div
-                      style={{ height: `50vh` }}
-                      className="flex items-center justify-center transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500"
-                    >
+                    <div className="flex items-center justify-center w-full py-8 transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500">
                       Contact Us
                     </div>
                   </Link>
