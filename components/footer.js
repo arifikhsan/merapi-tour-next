@@ -17,8 +17,6 @@ export default class Footer extends Component {
               </button>
               <p className="mt-2 text-sm text-center text-gray-500 md:ml-6 md:mt-0 sm:text-left">
                 Subscribe to our newsletter to get daily news about Mt. Merapi
-                <br className="hidden lg:block" />
-                We never send spam
               </p>
             </div>
             <span className="inline-flex justify-center w-full mt-6 lg:ml-auto lg:mt-0 md:justify-start md:w-auto">
