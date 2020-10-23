@@ -1,8 +1,41 @@
 import React from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import emailjs from "emailjs-com";
 
 export default function ContactPage() {
+  function order(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "merapi_service_gmail",
+        "new_order_for_admin",
+        e.target,
+        "user_CpWqkmbtLm5XlKmkfjL6U"
+      )
+      .then(
+        (result) => alert("Order sent!"),
+        (error) => console.log(error.text)
+      );
+  }
+
+  function sendMessage(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "merapi_service_gmail",
+        "merapi_question",
+        e.target,
+        "user_CpWqkmbtLm5XlKmkfjL6U"
+      )
+      .then(
+        (result) => alert("Message sent!"),
+        (error) => console.log(error.text)
+      );
+  }
+
   return (
     <div className="font-body">
       {/* hero */}
@@ -37,25 +70,33 @@ export default function ContactPage() {
               Fill out this form and then click the submit button
             </p>
           </div>
-          <div className="mt-8">
+          <form onSubmit={order} className="mt-8">
             <div>
               <span className="text-gray-700">What is your name?</span>
-              <input className="block w-full mt-1 form-input" />
+              <input name="name" className="block w-full mt-1 form-input" />
             </div>
 
             <div className="mt-4">
               <span className="text-gray-700">And your phone number</span>
-              <input className="block w-full mt-1 form-input" />
+              <input
+                name="phone_number"
+                className="block w-full mt-1 form-input"
+              />
             </div>
 
             <div className="mt-4">
               <span className="text-gray-700">For how many people?</span>
-              <input type="number" className="block w-full mt-1 form-input" />
+              <input
+                name="people"
+                type="number"
+                className="block w-full mt-1 form-input"
+              />
             </div>
 
             <div className="mt-4">
               <span className="text-gray-700">Additional message</span>
               <textarea
+                name="message"
                 className="w-full mt-1 form-textarea"
                 rows="5"
               ></textarea>
@@ -71,11 +112,14 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="mt-4">
-              <button className="px-4 py-2 text-white transition duration-500 bg-gray-700 rounded-md hover:bg-gray-600">
+              <button
+                className="px-4 py-2 text-white transition duration-500 bg-gray-700 rounded-md hover:bg-gray-600"
+                type="submit"
+              >
                 Submit
               </button>
             </div>
-          </div>
+          </form>
         </div>
         <div className="hidden lg:w-1/2 lg:block">
           <img src="/image/5.jpg" alt="climbing" />
@@ -97,7 +141,10 @@ export default function ContactPage() {
           ></iframe>
         </div>
         <div className="container flex px-5 py-24 mx-auto">
-          <div className="relative z-10 flex flex-col w-full p-8 mt-10 bg-white rounded-lg lg:w-1/3 md:w-1/2 md:ml-auto md:mt-0">
+          <form
+            className="relative z-10 flex flex-col w-full p-8 mt-10 bg-white rounded-lg lg:w-1/3 md:w-1/2 md:ml-auto md:mt-0"
+            onSubmit={sendMessage}
+          >
             <h2 className="mb-1 text-lg font-medium text-gray-900 title-font">
               Question or Feedback?
             </h2>
@@ -108,18 +155,23 @@ export default function ContactPage() {
               className="px-4 py-2 mb-4 text-base bg-white border border-gray-400 rounded focus:outline-none focus:border-indigo-500"
               placeholder="Email"
               type="email"
+              name="email"
             />
             <textarea
               className="h-32 px-4 py-2 mb-4 text-base bg-white border border-gray-400 rounded resize-none focus:outline-none focus:border-indigo-500"
               placeholder="Message"
+              name="message"
             ></textarea>
-            <button className="px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
+            <button
+              type="submit"
+              className="px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600"
+            >
               Send
             </button>
             <p className="mt-3 text-xs text-gray-500">
               We would love to hear from you!
             </p>
-          </div>
+          </form>
         </div>
       </section>
 

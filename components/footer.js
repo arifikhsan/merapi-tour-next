@@ -1,4 +1,5 @@
 import { Component } from "react";
+import emailjs from "emailjs-com";
 const randomQuote = require("random-quotes");
 
 export default class Footer extends Component {
@@ -7,29 +8,51 @@ export default class Footer extends Component {
     this.state = { quote: "" };
   }
   componentDidMount() {
-    // console.log(randomQuote.default())
     this.setState({
       quote: randomQuote.default(),
     });
   }
+
+  subscribe(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "merapi_service_gmail",
+        "merapi_subs_for_admin",
+        e.target,
+        "user_CpWqkmbtLm5XlKmkfjL6U"
+      )
+      .then(
+        (result) => alert("Subscription added!"),
+        (error) => console.log(error.text)
+      );
+  }
+
   render() {
     return (
       <footer className="text-gray-700 font-body">
         <div className="border-t border-gray-200">
           <div className="container flex flex-wrap items-center px-5 py-8 mx-auto">
-            <div className="flex flex-wrap justify-center md:flex-no-wrap md:justify-start">
+            <form
+              onSubmit={this.subscribe}
+              className="flex flex-wrap justify-center md:flex-no-wrap md:justify-start"
+            >
               <input
                 className="w-64 px-4 py-2 mr-2 text-base bg-gray-100 border border-gray-400 rounded sm:w-64 sm:mr-4 focus:outline-none focus:border-gray-500"
-                placeholder="your@email.com"
                 type="text"
+                name="email"
+                required
               />
-              <button className="inline-flex px-6 py-2 mt-2 text-white bg-gray-500 border-0 rounded sm:mt-0 focus:outline-none hover:bg-gray-600">
-                Subscribe
-              </button>
+              <input
+                className="inline-flex px-6 py-2 mt-2 text-white bg-gray-500 border-0 rounded sm:mt-0 focus:outline-none hover:bg-gray-600"
+                type="submit"
+                value="Subscribe"
+              />
               <p className="mt-2 text-sm text-center text-gray-500 md:ml-6 md:mt-0 sm:text-left">
                 Subscribe to our newsletter to get daily news about Mt. Merapi
               </p>
-            </div>
+            </form>
             <span className="inline-flex justify-center w-full mt-6 lg:ml-auto lg:mt-0 md:justify-start md:w-auto">
               <a className="text-gray-500">
                 <svg
