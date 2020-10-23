@@ -1,6 +1,17 @@
 import { Component } from "react";
+const randomQuote = require("random-quotes");
 
 export default class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { quote: "" };
+  }
+  componentDidMount() {
+    // console.log(randomQuote.default())
+    this.setState({
+      quote: randomQuote.default(),
+    });
+  }
   render() {
     return (
       <footer className="text-gray-700 font-body">
@@ -8,12 +19,12 @@ export default class Footer extends Component {
           <div className="container flex flex-wrap items-center px-5 py-8 mx-auto">
             <div className="flex flex-wrap justify-center md:flex-no-wrap md:justify-start">
               <input
-                className="w-40 px-4 py-2 mr-2 text-base bg-gray-100 border border-gray-400 rounded sm:w-64 sm:mr-4 focus:outline-none focus:border-gray-500"
+                className="w-64 px-4 py-2 mr-2 text-base bg-gray-100 border border-gray-400 rounded sm:w-64 sm:mr-4 focus:outline-none focus:border-gray-500"
                 placeholder="your@email.com"
                 type="text"
               />
-              <button className="inline-flex px-6 py-2 text-white bg-gray-500 border-0 rounded focus:outline-none hover:bg-gray-600">
-                Button
+              <button className="inline-flex px-6 py-2 mt-2 text-white bg-gray-500 border-0 rounded sm:mt-0 focus:outline-none hover:bg-gray-600">
+                Subscribe
               </button>
               <p className="mt-2 text-sm text-center text-gray-500 md:ml-6 md:mt-0 sm:text-left">
                 Subscribe to our newsletter to get daily news about Mt. Merapi
@@ -81,18 +92,18 @@ export default class Footer extends Component {
         <div className="bg-gray-200">
           <div className="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
             <p className="text-sm text-center text-gray-500 sm:text-left">
-              © 2020 tailblocks —
+              © 2020 InProduction —
               <a
                 href="https://arifikhsanudin.now.sh/"
                 className="ml-1 text-gray-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                InProduction
+                arifikhsanudin.now.sh
               </a>
             </p>
             <span className="w-full mt-2 text-sm text-center text-gray-500 sm:ml-auto sm:mt-0 sm:w-auto sm:text-left">
-              Enamel pin tousled raclette tacos irony
+              {this.state.quote.body} - {this.state.quote.author}
             </span>
           </div>
         </div>

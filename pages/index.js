@@ -570,11 +570,11 @@ export default class IndexPage extends Component {
                 <p className="text-base font-semibold leading-6 tracking-wide text-gray-600 uppercase">
                   Awward winning support
                 </p>
-                <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-widest text-gray-900 uppercase sm:text-4xl sm:leading-10">
+                <h3 className="mt-2 text-3xl font-extrabold leading-8 text-gray-900 sm:text-4xl sm:leading-10">
                   We're here to help
                 </h3>
-                <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 font-body lg:mx-auto">
-                  We will answer your question right away
+                <p className="max-w-2xl mt-4 text-base leading-7 text-gray-500 font-body lg:mx-auto">
+                  We will respond you right away
                 </p>
               </div>
               <div className="flex justify-center mt-8">
