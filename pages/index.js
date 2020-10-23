@@ -43,7 +43,7 @@ export default class IndexPage extends Component {
                   Make a memories with unforgettable experience
                 </p>
               </div>
-              <div className="grid gap-4 mt-10">
+              <div className="grid gap-4 mt-10 md:grid-cols-4">
                 <div className="relative transition duration-500 hover:shadow-lg">
                   <img src="image/1.jpg" className="h-64 rounded" />
                   <h4 className="absolute bottom-0 p-4 text-lg font-semibold tracking-widest text-white uppercase">
@@ -84,7 +84,7 @@ export default class IndexPage extends Component {
               </p>
             </div>
             <div className="flex flex-wrap mt-8">
-              <div className="w-full p-4 xl:w-1/4 md:w-1/2">
+              <div className="w-full p-4 lg:w-1/3 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
                   <h2 className="mb-1 text-sm font-medium tracking-widest uppercase title-font">
                     Economy
@@ -194,7 +194,7 @@ export default class IndexPage extends Component {
                   </p>
                 </div>
               </div>
-              <div className="w-full p-4 xl:w-1/4 md:w-1/2">
+              <div className="w-full p-4 lg:w-1/3 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-indigo-500 rounded-lg">
                   <span className="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white uppercase bg-indigo-500 rounded-bl">
                     Popular
@@ -307,7 +307,7 @@ export default class IndexPage extends Component {
                   </p>
                 </div>
               </div>
-              <div className="w-full p-4 xl:w-1/4 md:w-1/2">
+              <div className="w-full p-4 lg:w-1/3 md:w-1/2">
                 <div className="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
                   <h2 className="mb-1 text-sm font-medium tracking-widest uppercase title-font">
                     Business
@@ -499,7 +499,7 @@ export default class IndexPage extends Component {
               </p>
             </div>
             <div className="flex flex-wrap mt-8 text-center">
-              <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="w-full p-4 md:w-1/3 sm:w-1/2">
                 <div className="px-4 py-6 border-2 border-gray-200 rounded-lg">
                   <svg
                     fill="none"
@@ -519,7 +519,7 @@ export default class IndexPage extends Component {
                   <p className="leading-relaxed">Unique daily visitor</p>
                 </div>
               </div>
-              <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="w-full p-4 md:w-1/3 sm:w-1/2">
                 <div className="px-4 py-6 border-2 border-gray-200 rounded-lg">
                   <svg
                     fill="none"
@@ -540,7 +540,7 @@ export default class IndexPage extends Component {
                   <p className="leading-relaxed">Happy customer</p>
                 </div>
               </div>
-              <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="w-full p-4 md:w-1/3 sm:w-1/2">
                 <div className="px-4 py-6 border-2 border-gray-200 rounded-lg">
                   <svg
                     fill="none"

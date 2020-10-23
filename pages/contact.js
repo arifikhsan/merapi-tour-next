@@ -33,36 +33,24 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold text-gray-900 font-display">
               Let's Discover Merapi!
             </h2>
-            <p className="mt-2 text-gray-700">
-              Nulla eiusmod nulla amet ad dolore incididunt enim mollit
-              incididunt magna laborum cillum.
+            <p className="mt-2 text-sm text-gray-600">
+              Fill out this form and then click the submit button
             </p>
           </div>
           <div className="mt-8">
             <div>
               <span className="text-gray-700">What is your name?</span>
-              <input
-                className="block w-full mt-1 form-input"
-                placeholder="Jane Doe"
-              />
+              <input className="block w-full mt-1 form-input" />
             </div>
 
             <div className="mt-4">
               <span className="text-gray-700">And your phone number</span>
-              <input
-                className="block w-full mt-1 form-input"
-                placeholder="+628123456789"
-              />
+              <input className="block w-full mt-1 form-input" />
             </div>
 
             <div className="mt-4">
               <span className="text-gray-700">For how many people?</span>
-              <select className="block w-full mt-1 form-select">
-                <option>1-3</option>
-                <option>4-5</option>
-                <option>6-10</option>
-                <option>Above 10</option>
-              </select>
+              <input type="number" className="block w-full mt-1 form-input" />
             </div>
 
             <div className="mt-4">
@@ -106,7 +94,6 @@ export default function ContactPage() {
             title="map"
             scrolling="no"
             src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Merapi&ie=UTF8&t=&z=14&iwloc=B&output=embed"
-            style={{ filter: `grayscale(1) contrast(1.2) opacity(0.4)` }}
           ></iframe>
         </div>
         <div className="container flex px-5 py-24 mx-auto">

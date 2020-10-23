@@ -1,22 +1,9 @@
 import React, { Component } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import Carousel, { Modal, ModalGateway } from "react-images";
-
-const images = [
-  { source: "/image/1.jpg" },
-  { source: "/image/2.jpg" },
-  { source: "/image/3.jpg" },
-  { source: "/image/4.jpg" },
-];
 
 export default class GalleryPage extends Component {
-  state = { modalIsOpen: false };
-  toggleModal = () => {
-    this.setState((state) => ({ modalIsOpen: !state.modalIsOpen }));
-  };
   render() {
-    const { modalIsOpen } = this.state;
     return (
       <div className="font-body">
         {/* hero */}
@@ -42,15 +29,18 @@ export default class GalleryPage extends Component {
 
         {/* gallery */}
         <div className="max-w-6xl px-4 py-12 mx-auto">
-          {/* <ModalGateway>
-            {modalIsOpen ? (
-              <Modal onClose={this.toggleModal}> */}
-          <Carousel views={images} />
-          {/* </Modal>
-            ) : null}
-          </ModalGateway> */}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[...Array(12)].map((_, i) => {
+              return (
+                <img
+                  className="object-cover h-64"
+                  src={`https://loremflickr.com/640/320/mountain?random=${i}`}
+                  alt={`mountain ${i}`}
+                />
+              );
+            })}
+          </div>
         </div>
-
         {/* footer */}
         <Footer />
       </div>

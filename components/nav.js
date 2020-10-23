@@ -78,7 +78,7 @@ export default class Nav extends Component {
                 </div>
               </div>
               <div className="flex items-center justify-center h-full text-lg font-bold text-gray-600 font-display">
-                <div className="flex flex-col items-center justify-between w-full">
+                <div className="flex flex-col items-center justify-between w-full lg:text-3xl">
                   <Link href="/">
                     <div className="flex items-center justify-center w-full py-8 transition duration-500 cursor-pointer hover:text-white hover:bg-gray-500">
                       Home
