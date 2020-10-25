@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
         <title>Awesome Merapi</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </div>
   );
 }
